@@ -4,12 +4,13 @@ function encode() {
     let mode = document.querySelector("#Select").value;
     let currentLayout = LAYOUT[mode].encode;
     let inputData = document.querySelector("#Encode").value;
-
+    let separator = document.querySelector("#Separator").value;
+    
     let outputData = "";
     for (let ii = 0; ii < inputData.length; ii++) {
         let currentChar = inputData.charAt(ii);
 
-        outputData += "·";
+        outputData += separator;
         let carry = "";
         if (currentChar === " "){
             carry += "0";
