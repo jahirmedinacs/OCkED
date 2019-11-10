@@ -1,0 +1,54 @@
+textarea {
+    resize: none;
+    color: black;
+    background-color: white;
+    width: 90%;
+    height: 70px;
+}
+
+header {
+    text-align: right;
+    background-color: whitesmoke;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: whitesmoke;
+    color: lightsteelblue;
+    font-size: large;
+    text-align: left;
+}
+
+.oldtext {
+    font-family: monospace;
+    color: darkslategray;
+}
+
+.black-oldtext {
+    font-family: monospace;
+    color: black;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+}

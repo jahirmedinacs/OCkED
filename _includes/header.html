@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if page.title %}
+            {{ site.min_title }} | {{ page.title }}
+        {% else %}
+            {{ site.min_title }}
+        {% endif %}
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css"/>
+</head>
+<body>
+
+
