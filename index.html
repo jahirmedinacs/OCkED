@@ -16,13 +16,18 @@ layout: default
             Encode Text >>
         </h2>
     </label>
-    <textarea id="Encode"></textarea>
+    <textarea id="Encode">Hello World</textarea>
     <br>
     <br>
-    <input value="Encode" title="Encode" type="button" onclick="encode('standard')"/>
+    <input value="Encode" title="Encode" type="button" onclick="encode()"/>
     <br>
     <br>
     <hr>
+    <br>
+    <label for="Separator">
+        <b>Number Separator</b>
+    </label>
+    <input type="text" maxlength="1" id="Separator" value="·">
     <label for="Decode">
         <h2>
             Decode Number >>
@@ -32,5 +37,6 @@ layout: default
     <br>
     <br>
     <input value="Decode" title="Decode"  type="button" onclick="decode()"/>
+    <br>
     <br>
 </div>

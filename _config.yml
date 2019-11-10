@@ -43,7 +43,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - .idea/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -58,4 +59,4 @@ plugins:
 ### PERSONAL VARIABLES
 
 repo_name: OCkED
-layout_JSON_url: "https://gist.githubusercontent.com/jahirmedinacs/802c504611077ce8091f001991880759/raw/b22210427e7ce965b945ecb87b683c66dfeb5bd4/layouts.JSON"
+layout_JSON_url: "https://gist.githubusercontent.com/jahirmedinacs/802c504611077ce8091f001991880759/raw/0f929b752065db58912cd382dcb83d0906910da5/layouts.JSON"

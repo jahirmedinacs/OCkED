@@ -2,7 +2,7 @@ console.log("Encoder Loaded");
 
 function encode() {
     let mode = document.querySelector("#Select").value;
-    let currentLayout = LAYOUT[mode];
+    let currentLayout = LAYOUT[mode].encode;
     let inputData = document.querySelector("#Encode").value;
 
     let outputData = "";
@@ -10,18 +10,25 @@ function encode() {
         let currentChar = inputData.charAt(ii);
 
         outputData += "·";
-
+        let carry = "";
         if (currentChar === " "){
-            outputData += "0";
+            carry += "0";
         }
         else{
             if (currentChar === currentChar.toUpperCase()){
-                outputData += "#";
-                outputData += currentLayout[currentChar.toLowerCase()]
+                carry += "#";
+            }
+            if (currentLayout.hasOwnProperty(currentChar.toLowerCase())){
+                carry += currentLayout[currentChar.toLowerCase()];
             }
             else{
-                outputData += currentLayout[currentChar]
+                carry = undefined;
             }
+
+        }
+
+        if (carry !== undefined){
+            outputData += carry;
         }
     }
     document.querySelector("#Decode").value = outputData;

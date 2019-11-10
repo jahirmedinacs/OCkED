@@ -7,11 +7,12 @@ textarea {
 }
 
 header {
+    position: page;
+    top: 0;
+    left: 0;
+    right: 0;
     text-align: right;
     background-color: whitesmoke;
-    right: 0;
-    bottom: 0;
-    left: 0;
     padding: 1rem;
 }
 
@@ -26,10 +27,10 @@ footer a{
 }
 
 footer {
-    position: absolute;
+    position: page;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
     padding: 1rem;
     background-color: whitesmoke;
     color: lightsteelblue;
